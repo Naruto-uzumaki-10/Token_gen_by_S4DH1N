@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+ #!/usr/bin/python3
 #-*-coding:utf-8-*-
 
 import random, string, json, time, requests, uuid, base64, io, struct, sys, os
@@ -66,8 +66,7 @@ def venom_logo():
 \__|  \__|\__|  \__|\__|  \__|\__|  \__|\__|  \__|\__|"""
     
     for line in info.splitlines():
-        sys.stdout.write("".join(f"\033[38;5;{random.randint(16,231)}m" + char for char in line) + "\033[0m\n")
-        time.sleep(0.01)
+        
 
 def loading_animation(duration=2):
     chars = ["⠙", "⠘", "⠰", "⠴", "⠤", "⠦", "⠆", "⠃", "⠋", "⠉"]
