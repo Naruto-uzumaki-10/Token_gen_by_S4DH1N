@@ -232,4 +232,4 @@ if __name__ == "__main__":
     else:
         print(Fore.RED + f"\n [!] LOGIN FAILED: {result['error']}" + Style.RESET_ALL)
 
-    print("\n" + Fore.MAGENTA + "OWNER BROKEN NADEEM - RAJ THAKUR TOOLS" + Style.RESET_ALL)
+    print("\n" + Fore.MAGENTA + "OWNER BROKEN UCHIHA SADHIN - SADHIN MAHMUD TOOLS" + Style.RESET_ALL)
