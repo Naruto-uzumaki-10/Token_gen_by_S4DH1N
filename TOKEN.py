@@ -57,14 +57,12 @@ def animated_logo():
 # --- Logo 2: ORIGINAL SADHIN LOGO (VENOM STYLE) ---
 def venom_logo():
     info = r"""
-    $$$$$$$\   $$\   $$\  $$$$$$\  $$\   $$\ $$\   $$\
-$$  __$$\  $$ |  $$ |$$  __$$\ $$ |  $$ |$$$\  $$ |
-$$ |  $$ | $$ |  $$ |$$ /  $$ |$$ |  $$ |$$$$\ $$ |
-$$$$$$$  | $$$$$$$$ |$$$$$$$$ |$$$$$$$$ |$$ $$\$$ |
-$$  __$$<  $$  __$$ |$$  __$$ |$$  __$$ |$$ \$$$$ |
-$$ |  $$ | $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |\$$$ |
-$$$$$$$  | $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ | \$$ |
-\_______/  \__|  \__|\__|  \__|\__|  \__|\__|  \__|    """
+  $$$$$$\   $$$$$$\   $$$$$$\  ██╗  ██╗██╗███╗   ██╗
+██╔═══██╗██╔═══██╗██╔═══██╗██║  ██║██║████╗  ██║
+██║   ██║██║   ██║██║   ██║███████║██║██╔██╗ ██║
+██║   ██║██║   ██║██║   ██║██╔══██║██║██║╚██╗██║
+╚██████╔╝╚██████╔╝╚██████╔╝██║  ██║██║██║ ╚████║
+ ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝  """
     
     for line in info.splitlines():
         sys.stdout.write("".join(f"\033[38;5;{random.randint(16,231)}m" + char for char in line) + "\033[0m\n")
@@ -198,7 +196,7 @@ if __name__ == "__main__":
     border_line = border_color + "<<==============================================================>>"
     
     print(border_line)
-    animated_print("          TOKEN GRENADE V7 - POWERED BY THEW BRAND SADDHIN", delay=0.005)
+    animated_print("          TOKEN GENARETOR V7 - POWERED BY THEW BRAND SADDHIN", delay=0.005)
     print(border_line + Style.RESET_ALL)
 
     # --- FIXED: Only 1 Line Space ---
