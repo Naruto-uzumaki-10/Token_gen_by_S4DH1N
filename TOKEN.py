@@ -65,7 +65,7 @@ def venom_logo():
 | $$ |  $$ | $$ |  $$ | $$ |  $$ | $$ |  $$ | $$ |  $$ |
 \__|  \__|\__|  \__|\__|  \__|\__|  \__|\__|  \__|\__|"""
     
-    for line in info.splitlines():
+    
         
 
 def loading_animation(duration=2):
