@@ -37,7 +37,7 @@ def animated_print(text, delay=0.01, jitter=0.005):
         time.sleep(delay + random.uniform(0, jitter))
     print()
 
-# --- Logo 1: ORIGINAL RAJ THAKUR LOGO ---
+# --- Logo 1: ORIGINAL SADHINLOGO ---
 def animated_logo():
     logo_text = r"""
  _______  _______  _______  _       _________ _        _______   
@@ -54,30 +54,20 @@ def animated_logo():
          animated_print(line, delay=0.005, jitter=0.002)
 
 
-# --- Logo 2: ORIGINAL RAJ SINGH (VENOM STYLE) ---
+# --- Logo 2: ORIGINAL SADHIN LOGO (VENOM STYLE) ---
 def venom_logo():
     info = r"""
-    $$$$$$$\   $$\   $$\  $$$$$$\  $$\   $$\ $$\   $$\
-$$  __$$\  $$ |  $$ |$$  __$$\ $$ |  $$ |$$$\  $$ |
-$$ |  $$ | $$ |  $$ |$$ /  $$ |$$ |  $$ |$$$$\ $$ |
-$$$$$$$  | $$$$$$$$ |$$$$$$$$ |$$$$$$$$ |$$ $$\$$ |
-$$  __$$<  $$  __$$ |$$  __$$ |$$  __$$ |$$ \$$$$ |
-$$ |  $$ | $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |\$$$ |
-$$$$$$$  | $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ | \$$ |
-\_______/  \__|  \__|\__|  \__|\__|  \__|\__|  \__|    """
+    | $$$$$$\  | $$$$$$\  | $$$$$$\  | $$$$$$\  | $$$$$$\ |
+| $$  __$$\| $$  __$$\| $$  __$$\| $$  __$$\| $$  __$$\|
+| $$ /  $$ | $$ /  $$ | $$ /  $$ | $$ /  $$ | $$ /  $$ |
+| $$$$$$$$ | $$$$$$$$ | $$$$$$$$ | $$$$$$$$ | $$$$$$$$ |
+| $$  __$$ | $$  __$$ | $$  __$$ | $$  __$$ | $$  __$$ |
+| $$ |  $$ | $$ |  $$ | $$ |  $$ | $$ |  $$ | $$ |  $$ |
+\__|  \__|\__|  \__|\__|  \__|\__|  \__|\__|  \__|\__|"""
     
     for line in info.splitlines():
-      # ==============================
-# Compact Rainbow Header
-# ==============================
-
-line = "SADHIN V7 TOKEN EXTRACTOR"  # <-- ছোট স্টাইল, শুধু নাম
-
-# flashy rainbow animation
-sys.stdout.write(
-    "".join(f"\033[38;5;{random.randint(16,231)}m" + char for char in line) + "\033[0m\n"
-)
-time.sleep(0.01)
+        sys.stdout.write("".join(f"\033[38;5;{random.randint(16,231)}m" + char for char in line) + "\033[0m\n")
+        time.sleep(0.01)
 
 def loading_animation(duration=2):
     chars = ["⠙", "⠘", "⠰", "⠴", "⠤", "⠦", "⠆", "⠃", "⠋", "⠉"]
@@ -241,4 +231,4 @@ if __name__ == "__main__":
     else:
         print(Fore.RED + f"\n [!] LOGIN FAILED: {result['error']}" + Style.RESET_ALL)
 
-    print("\n" + Fore.MAGENTA + "OWNER BROKEN UCHIHA SADHIN - SADHIN MAHMUD TOOLS" + Style.RESET_ALL)
+    print("\n" + Fore.MAGENTA + "OWNER BROKEN SADHIN - SADHIN TOOL" + Style.RESET_ALL)
